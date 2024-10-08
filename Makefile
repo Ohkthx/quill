@@ -38,10 +38,10 @@ $(TARGET): $(OBJS)
 	@mkdir -p $(BIN_DIR)
 	@$(CC) $(CFLAGS) -o $@ $^
 
-# Run application
+# Run application with arguments
 .PHONY: run
 run: $(TARGET)
-	@$(TARGET)
+	@$(TARGET) $(ARGS)
 
 # Build tests
 tests: $(TEST_TARGET)

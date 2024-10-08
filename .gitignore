@@ -3,7 +3,8 @@ bin/
 obj/
 
 # Others
-commit-msg
+commit_msg
+.DS_Store
 
 # Prerequisites
 *.d
